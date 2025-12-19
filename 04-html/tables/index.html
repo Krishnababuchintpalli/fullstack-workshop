@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Directory</title>
+  </head>
+  <body>
+    <header>
+      <h1
+        style="color: orange; text-align: center; font-size:50px; margin-bottom: 5px;"
+        id="companyName"
+      >
+        Revature
+      </h1>
+      <h3 style="margin-top: 1px; text-align:center;color:green">A better way to build </h3>
+      <label for="department">Select Department:</label>
+      <select id="department" name="department">
+        <option value="">-- All Departments --</option>
+        <option value="hr">HR</option>
+        <option value="engineering">Engineering</option>
+        <option value="finance">Finance</option>
+        <option value="sales">Sales</option>
+        <option value="marketing">Marketing</option>
+      </select>
+    </header>
+    <main style="margin-top: 30px"> 
+      <table aria-label="Company Emploee Directory" border="2" bordercolor="black" style="border-collapse: collapse;">
+        <caption
+          style="
+            caption-side: top;
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+          "
+        >
+          Company Employee Directory - 2024
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Photo</th>
+            <th scope="col">Name</th>
+            <th scope="col">Department</th>
+            <th scope="col">Position</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-department="engineering" data-status="active">
+            <td>EMP001</td>
+            <td>
+              <img src="https://placehold.co/64x64?text=AM" alt="Arjun Mehta" />
+            </td>
+            <td>Arjun Mehta</td>
+            <td rowspan="3">Engineering</td>
+            <td>Senior Software Engineer</td>
+            <td>
+              <a href="mailto:arjun.mehta@example.com"
+                >arjun.mehta@example.com</a
+              >
+            </td>
+            <td><a href="tel:+919876510001">+91-98765-10001</a></td>
+            <td><time datetime="2022-04-15">Apr 15, 2022</time></td>
+            <td><span class="status active">Active</span></td>
+          </tr>
+          <tr data-department="engineering" data-status="remote">
+            <td>EMP006</td>
+            <td>
+              <img src="https://placehold.co/64x64?text=DR" alt="Divya Reddy" />
+            </td>
+            <td>Divya Reddy</td>
+
+            <td>Junior QA Engineer</td>
+            <td>
+              <a href="mailto:divya.reddy@example.com"
+                >divya.reddy@example.com</a
+              >
+            </td>
+            <td><a href="tel:+919876510006">+91-98765-10006</a></td>
+            <td><time datetime="2023-08-14">Aug 14, 2023</time></td>
+            <td><span class="status remote">Remote</span></td>
+          </tr>
+          <tr data-department="engineering" data-status="active">
+            <td>EMP009</td>
+            <td>
+              <img
+                src="https://placehold.co/64x64?text=NS"
+                alt="Neeraj Sinha"
+              />
+            </td>
+            <td>Neeraj Sinha</td>
+
+            <td>Engineering Manager</td>
+            <td>
+              <a href="mailto:neeraj.sinha@example.com"
+                >neeraj.sinha@example.com</a
+              >
+            </td>
+            <td><a href="tel:+919876510009">+91-98765-10009</a></td>
+            <td><time datetime="2018-01-29">Jan 29, 2018</time></td>
+            <td><span class="status active">Active</span></td>
+          </tr>
+
+          <tr data-department="marketing" data-status="active">
+            <td>EMP002</td>
+            <td>
+              <img src="https://placehold.co/64x64?text=PN" alt="Priya Nair" />
+            </td>
+            <td>Priya Nair</td>
+            <td rowspan="2">Marketing</td>
+            <td>Marketing Manager</td>
+            <td>
+              <a href="mailto:priya.nair@example.com">priya.nair@example.com</a>
+            </td>
+            <td><a href="tel:+919876510002">+91-98765-10002</a></td>
+            <td><time datetime="2021-09-01">Sep 1, 2021</time></td>
+            <td><span class="status active">Active</span></td>
+          </tr>
+          <tr data-department="marketing" data-status="active">
+            <td>EMP008</td>
+            <td>
+              <img src="https://placehold.co/64x64?text=AK" alt="Aisha Khan" />
+            </td>
+            <td>Aisha Khan</td>
+
+            <td>Digital Marketing Intern</td>
+            <td>
+              <a href="mailto:aisha.khan@example.com">aisha.khan@example.com</a>
+            </td>
+            <td><a href="tel:+919876510008">+91-98765-10008</a></td>
+            <td><time datetime="2024-07-01">Jul 1, 2024</time></td>
+            <td><span class="status active">Active</span></td>
+          </tr>
+
+          <tr data-department="hr" data-status="on-leave">
+            <td>EMP003</td>
+            <td>
+              <img src="https://placehold.co/64x64?text=RV" alt="Rohan Verma" />
+            </td>
+            <td>Rohan Verma</td>
+            <td>HR</td>
+            <td>HR Junior Executive</td>
+            <td>
+              <a href="mailto:rohan.verma@example.com"
+                >rohan.verma@example.com</a
+              >
+            </td>
+            <td><a href="tel:+919876510003">+91-98765-10003</a></td>
+            <td><time datetime="2023-01-10">Jan 10, 2023</time></td>
+            <td><span class="status on-leave">On Leave</span></td>
+          </tr>
+
+          <tr data-department="sales" data-status="active">
+            <td>EMP004</td>
+            <td>
+              <img
+                src="https://placehold.co/64x64?text=SK"
+                alt="Sneha Kulkarni"
+              />
+            </td>
+            <td>Sneha Kulkarni</td>
+            <td rowspan="2">Sales</td>
+            <td>Sales Intern</td>
+            <td>
+              <a href="mailto:sneha.kulkarni@example.com"
+                >sneha.kulkarni@example.com</a
+              >
+            </td>
+            <td><a href="tel:+919876510004">+91-98765-10004</a></td>
+            <td><time datetime="2024-06-03">Jun 3, 2024</time></td>
+            <td><span class="status active">Active</span></td>
+          </tr>
+          <tr data-department="sales" data-status="on-leave">
+            <td>EMP007</td>
+            <td>
+              <img
+                src="https://placehold.co/64x64?text=MG"
+                alt="Manish Gupta"
+              />
+            </td>
+            <td>Manish Gupta</td>
+
+            <td>Senior Sales Executive</td>
+            <td>
+              <a href="mailto:manish.gupta@example.com"
+                >manish.gupta@example.com</a
+              >
+            </td>
+            <td><a href="tel:+919876510007">+91-98765-10007</a></td>
+            <td><time datetime="2019-03-05">Mar 5, 2019</time></td>
+            <td><span class="status on-leave">On Leave</span></td>
+          </tr>
+
+          <tr data-department="finance" data-status="remote">
+            <td>EMP005</td>
+            <td>
+              <img src="https://placehold.co/64x64?text=KS" alt="Karan Shah" />
+            </td>
+            <td>Karan Shah</td>
+            <td>Finance</td>
+            <td>Finance Manager</td>
+            <td>
+              <a href="mailto:karan.shah@example.com">karan.shah@example.com</a>
+            </td>
+            <td><a href="tel:+919876510005">+91-98765-10005</a></td>
+            <td><time datetime="2020-11-20">Nov 20, 2020</time></td>
+            <td><span class="status remote">Remote</span></td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="9"><strong>Total Employees:</strong> 9</td>
+          </tr>
+          <tr>
+            <td colspan="9">
+              <strong>Department Summary:</strong>
+              Engineering (3), Marketing (2), HR (1), Sales (2), Finance (1)
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+  </body>
+</html>

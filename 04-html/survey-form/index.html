@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Customer Satisfaction Survey</title>
+  </head>
+  <body>
+    <form
+      action="#"
+      method="post"
+      style="border: 4px solid black; border-radius: 5px"
+    >
+    <h1 style="text-align: center;font-size: 35px;color: rgb(75, 12, 248);">Customer Satisfaction Survey</h1>
+      <fieldset
+        style="
+          border: 3px solid #333;
+          border-radius: 15px;
+          display: inline-block;
+          display: block;
+          margin: 10px;
+        "
+      >
+        <legend
+          style="
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+          "
+        >
+          Personal Information
+        </legend>
+
+        <div>
+          <label for="name" style="font-weight: bold; font-size: 20px"
+            >Full Name :</label
+          >
+          <input
+            id="name"
+            type="text"
+            minlength="2"
+            maxlength="100"
+            placeholder="Enter your name"
+            aria-required="true"
+            style="
+              border: 2px solid black;
+              border-radius: 5px;
+              font-size: 20px;
+              margin-left: 10px;
+              margin-bottom: 20px;
+            "
+          />
+        </div>
+
+        <div>
+          <label for="email" style="font-weight: bold; font-size: 20px"
+            >Email:</label
+          >
+          <input
+            id="email"
+            type="email"
+            placeholder="xyz@gmail.com"
+            style="
+              border: 2px solid black;
+              border-radius: 5px;
+              font-size: 20px;
+              margin-left: 10px;
+              margin-bottom: 20px;
+            "
+            required
+          />
+        </div>
+        <div>
+          <label for="phone" style="font-weight: bold; font-size: 20px"
+            >Phone:</label
+          >
+          <input
+            type="tel"
+            style="
+              border: 2px solid black;
+              border-radius: 5px;
+              font-size: 20px;
+              margin-left: 10px;
+              margin-bottom: 20px;
+            "
+            required
+          />
+        </div>
+
+        <div>
+          <label for="age" style="font-weight: bold; font-size: 20px"
+            >Age Range:</label
+          >
+          <select
+            id="age"
+            name="age"
+            style="
+              border: 2px solid black;
+              border-radius: 5px;
+              font-size: 20px;
+              margin-left: 10px;
+              margin-bottom: 20px;
+            "
+            required
+          >
+            <option value="" disabled selected>Choose an age range</option>
+            <option value="under-18">Under 18</option>
+            <option value="18-24">18 - 24</option>
+            <option value="25-34">25 - 34</option>
+            <option value="35-44">35 - 44</option>
+            <option value="45-54">45 - 54</option>
+            <option value="55-plus">55+</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="gender" style="font-weight: bold; font-size: 20px"
+            >Gender:</label
+          >
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male" style="font-size: 20px">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female" style="font-size: 20px">Female</label>
+          <input type="radio" id="nogender" name="nogender" value="female" />
+          <label for="no gender" style="font-size: 20px"
+            >Prefer not to say</label
+          >
+        </div>
+      </fieldset>
+
+      <fieldset
+        style="
+          border: 3px solid #333;
+          border-radius: 15px;
+          /* display: inline-block; */
+          margin: 10px;
+        "
+      >
+        <legend
+          style="
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+          "
+        >
+          Product Feedback
+        </legend>
+        <div style="font-size: 20px">
+          <label style="font-weight: bold; font-size: 22px"
+            >Products Used (select multiple):</label
+          ><br />
+
+          <label>
+            <input type="checkbox" name="products" value="web-app" /> Product A
+            - Web Application </label
+          ><br />
+
+          <label>
+            <input type="checkbox" name="products" value="mobile-app" /> Product
+            B - Mobile App </label
+          ><br />
+
+          <label>
+            <input type="checkbox" name="products" value="desktop-software" />
+            Product C - Desktop Software </label
+          ><br />
+
+          <label>
+            <input type="checkbox" name="products" value="api-services" />
+            Product D - API Services </label
+          ><br />
+
+          <label>
+            <input type="checkbox" name="products" value="cloud-storage" />
+            Product E - Cloud Storage
+          </label>
+        </div>
+        <br />
+        <div>
+          <label
+            for="customerDuration"
+            style="font-weight: bold; font-size: 20px"
+            >How long have you been a customer?</label
+          ><br />
+          <select
+            id="customerDuration"
+            name="customerDuration"
+            style="font-size: 20px"
+          >
+            <option value="">Select duration</option>
+            <option value="less-than-1-month">Less than 1 month</option>
+            <option value="1-6-months">1-6 months</option>
+            <option value="6-12-months">6-12 months</option>
+            <option value="1-2-years">1-2 years</option>
+            <option value="more-than-2-years">More than 2 years</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset
+        style="
+          border: 3px solid #333;
+          border-radius: 15px;
+          /* display: inline-block; */
+          margin: 10px;
+        "
+      >
+        <legend
+          style="
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+          "
+        >
+          Satisfaction Rating
+        </legend>
+
+        <div>
+          <label style="font-weight: bold; font-size: 22px"
+            >Overall Satisfaction:</label
+          ><br />
+
+          <label> <input type="radio" name="satisfaction" value="1" /> ★</label
+          ><br />
+
+          <label>
+            <input type="radio" name="satisfaction" value="2" /> ★★ </label
+          ><br />
+
+          <label>
+            <input type="radio" name="satisfaction" value="3" /> ★★★ </label
+          ><br />
+
+          <label>
+            <input type="radio" name="satisfaction" value="4" /> ★★★★ </label
+          ><br />
+          <label>
+            <input type="radio" name="satisfaction" value="5" /> ★★★★★
+          </label>
+        </div>
+        <br />
+        <div>
+          <label for="productQuality" style="font-weight: bold; font-size: 22px"
+            >Product Quality:</label
+          ><br />
+          <input
+            type="range"
+            id="productQuality"
+            name="productQuality"
+            min="1"
+            max="10"
+            value="5"
+            style="margin: 5px"
+            size=""
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label
+            for="customerSupport"
+            style="font-weight: bold; font-size: 22px"
+            >Customer Support:</label
+          ><br />
+          <input
+            type="range"
+            id="customerSupport"
+            name="customerSupport"
+            min="1"
+            max="10"
+            value="5"
+            style="margin: 5px"
+            size=""
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="valueForMoney" style="font-weight: bold; font-size: 22px"
+            >Value for Money:</label
+          ><br />
+          <input
+            type="range"
+            id="valueForMoney"
+            name="valueForMoney"
+            min="1"
+            max="10"
+            value="5"
+            style="margin: 5px"
+            size=""
+          />
+        </div>
+
+        <div style="font-size: 20px">
+          <label style="font-weight: bold; font-size: 22px"
+            >Would you recommend us? :</label
+          ><br />
+
+          <label>
+            <input type="radio" name="recommendation" value="recommendation" />
+            Definitely</label
+          ><br />
+
+          <label>
+            <input type="radio" name="recommendation" value="recommendation" />
+            Probably</label
+          ><br />
+
+          <label>
+            <input type="radio" name="recommendation" value="recommendation" />
+            Not sure </label
+          ><br />
+
+          <label>
+            <input type="radio" name="recommendation" value="recommendation" />
+            Probably not </label
+          ><br />
+          <label>
+            <input type="radio" name="recommendation" value="recommendation" />
+            Definitely not
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset
+        style="
+          border: 3px solid #333;
+          border-radius: 15px;
+          /* display: inline-block; */
+          margin: 10px;
+        "
+      >
+        <legend
+          style="
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+          "
+        >
+          Detailed Feedback
+        </legend>
+
+        <div style="font-size: 20px">
+          <label for="likeMost" style="font-size: 22px; font-weight: bold"
+            >What do you like most?</label
+          ><br />
+          <textarea
+            id="likeMost"
+            name="likeMost"
+            rows="4"
+            maxlength="500"
+            style="field-sizing: content"
+            placeholder="Tell us what you like most about our products/services..."
+          ></textarea>
+          <div style="font-size: 0.9em; color: #666; margin-top: 5px">
+            (Maximum 500 characters)
+          </div>
+        </div>
+        <br />
+        <div style="font-size: 20px">
+          <label for="improvement" style="font-size: 22px; font-weight: bold"
+            >What can we improve?</label
+          ><br />
+          <textarea
+            id="improvement"
+            name="improvement"
+            rows="4"
+            maxlength="500"
+            style="field-sizing: content"
+            placeholder="Tell us what you like us to improve..."
+          ></textarea>
+          <div style="font-size: 0.9em; color: #666; margin-top: 5px">
+            (Maximum 500 characters)
+          </div>
+        </div>
+
+        <br />
+        <div style="font-size: 20px">
+          <label for="comments" style="font-size: 22px; font-weight: bold"
+            >Additional Comments </label
+          ><br />
+          <textarea
+            id="comments"
+            name="comments"
+            rows="6"
+            maxlength="1000"
+            style="field-sizing: content"
+            placeholder="Any additional comments..."
+          ></textarea>
+          <div style="font-size: 0.9em; color: #666; margin-top: 5px">
+            (Maximum 1000 characters)
+          </div>
+        </div>
+      </fieldset>
+      <fieldset
+        style="
+          border: 3px solid #333;
+          border-radius: 15px;
+          /* display: inline-block; */
+          margin: 10px;
+        "
+      >
+        <legend
+          style="
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+          "
+        >
+          Contact Preferences
+        </legend>
+
+        <legend
+          style="
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+          "
+        >
+        </legend>
+        <div style="font-size: 20px">
+          <label style="font-weight: bold; font-size: 22px"
+            >Preferred Contact Method:</label
+          ><br />
+
+          <label>
+            <input type="checkbox" name="contactPreferences" value="email" />
+            Email </label
+          ><br />
+
+          <label>
+            <input type="checkbox" name="contactPreferences" value="Phone" />
+            Phone </label
+          ><br />
+
+          <label>
+            <input type="checkbox" name="contactPreferences" value="sms" />
+            SMS </label
+          ><br />
+
+          <label>
+            <input
+              type="checkbox"
+              name="contactPreferences"
+              value="noContact"
+            />
+            No Contact </label
+          ><br />
+        </div>
+        <br />
+        <div style="font-size: 20px">
+          <label style="font-weight: bold; font-size: 22px"
+            >Best Time to Contact:</label
+          ><br />
+
+          <label>
+            <input type="radio" name="bestTime" value="bestTime" />
+            Morning (9am-12pm)</label
+          ><br />
+
+          <label>
+            <input type="radio" name="bestTime" value="bestTime" />
+            Afternoon (12pm-5pm)</label
+          ><br />
+
+          <label>
+            <input type="radio" name="bestTime" value="bestTime" />
+            Evening (5pm-8pm) </label
+          ><br />
+        </div>
+         <br />
+        </legend>
+        
+        <div style="font-size: 20px">
+
+            
+          <label>
+            <input type="checkbox" name="Subscribe" value="Subscribe" />
+          </label>
+          <label style="font-weight: bold; font-size: 22px"
+            >Subscribe to Newsletter </label
+          >
+          </div>
+
+          <div style="font-size: 20px">
+
+            
+          <label>
+            <input type="checkbox" name="Subscribe" value="Subscribe" required/>
+          </label>
+          <label style="font-weight: bold; font-size: 22px"
+            >Agree to Terms </label
+          >
+          </div>
+        
+
+      </fieldset>
+      <div class="form-actions" >
+        <button type="submit" style="font-size: 20px;color: white;background-color: green;font-weight: bold;border:2px solid black;border-radius: 4px;margin: 10px;">Submit Survey</button>
+        <button type="reset" style="font-size: 20px;color: white;background-color: red;font-weight: bold;border:2px solid black;border-radius: 4px;margin: 10px;">Clear Form</button>
+    </div>
+    </form>
+  </body>
+</html>
