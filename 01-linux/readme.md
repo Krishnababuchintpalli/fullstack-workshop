@@ -1,0 +1,1 @@
+Completed linux basics and some operations on shell scripting
