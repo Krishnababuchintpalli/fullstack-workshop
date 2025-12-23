@@ -1,0 +1,7 @@
+let weight=prompt("Enter your weight in kgs")
+let height=prompt("Enter your height in meters")
+let bmi=weight/(height**2)
+if(bmi<18.5) alert(`you are underweight`)
+else if(bmi >=18.5 && bmi<=24.9) alert(`Normal`)
+else if(bmi>=25 && bmi<=29.9) alert(`Overweight`)
+    else alert(`Obese`)
