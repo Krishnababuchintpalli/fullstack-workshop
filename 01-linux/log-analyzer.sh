@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # the file path is set to the path variable
 path="./sample-log.txt"
 
