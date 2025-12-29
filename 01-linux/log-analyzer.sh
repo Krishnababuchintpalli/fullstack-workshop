@@ -1,5 +1,9 @@
 #!/bin/bash
 
+set -e          # Exit on error
+set -u          # Exit on undefined variable
+set -o pipefail # Catch errors in pipes
+
 # the file path is set to the path variable
 path="./sample-log.txt"
 
