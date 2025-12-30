@@ -1,12 +1,20 @@
 #!/bin/bash
 
-set -e          # Exit on error
-set -u          # Exit on undefined variable
-set -o pipefail # Catch errors in pipes
+# Exit on error, undefined variable, or pipe failure
+set -e
+set -u
+set -o pipefail
 
-# the file path is set to the path variable
-path="./sample-log.txt"
+# Check if file path argument is provided
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <log-file-path>"
+    exit 1
+fi
 
+# Log file path from command-line argument
+path="$1"
+
+# Check if file exists
 if [ -f "$path" ]; then
 
     echo "=== Log Analysis Report ==="
@@ -36,5 +44,6 @@ if [ -f "$path" ]; then
         | awk '{print "  - " $0}'
 
 else
-    echo "File does not exist"
+    echo "File does not exist: $path"
+    exit 1
 fi
