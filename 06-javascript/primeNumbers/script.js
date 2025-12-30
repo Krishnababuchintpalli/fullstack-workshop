@@ -1,16 +1,9 @@
-function findPrimes(limit){
-    let count=0;
-    let arr=[]
+const findPrimes = (limit) => {
+  return Array.from({ length: limit - 1 }, (_, i) => i + 2)
+    .filter(num =>
+      Array.from({ length: Math.floor(Math.sqrt(num)) - 1 }, (_, j) => j + 2)
+        .every(divisor => num % divisor !== 0)
+    );
+};
 
- for(let i=1;i<=limit;i++){
-    let count=0;
-    for(let j=1;j<i;j++){
-     if(i%j==0) count++;
-
-    }
-    if(count==1) arr.push(i);
- }
- return arr;
-}
-
-console.log(findPrimes(30));
+console.log(`Prime numbers up to 30: ${findPrimes(30).join(", ")}`);

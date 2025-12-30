@@ -1,13 +1,18 @@
-// let n=prompt('Enter a number grester than 1');
+const printPyramid = (n) => {
+  Array.from({ length: n }, (_, i) => {
+    const level = i + 1;
 
-function printPyramid(n){
-for(let i=1;i<=n;i++){
-  let ch=""
-  for(let j=1;j<=n-i;j++) ch+=" "
-  for(let j=1;j<=i;j++) ch+=(j);
-  for(let j=i-1;j>0;j--) ch+=j
-  console.log(ch);
-}
-}
+    const spaces = " ".repeat(n - level);
+
+    const leftNumbers = Array.from({ length: level }, (_, j) => j + 1).join("");
+
+    const rightNumbers = Array.from(
+      { length: level - 1 },
+      (_, j) => level - j - 1
+    ).join("");
+
+    console.log(`${spaces}${leftNumbers}${rightNumbers}`);
+  });
+};
 
 printPyramid(5);
