@@ -1,7 +1,7 @@
 # Review: 05-css
 
 **Exercise:**  Exercise: Style a Responsive Card Component
-**Review Date:** 2025-12-30 12:21
+**Review Date:** 2025-12-30 15:30
 
 ---
 
@@ -31,7 +31,7 @@
 
 📄 **index.html**
    Path: `05-css/index.html`
-   Lines: 184
+   Lines: 151
 
     - ✅ Has `<!DOCTYPE html>`
     - ✅ Uses semantic HTML5 tags

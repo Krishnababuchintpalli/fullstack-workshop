@@ -1,7 +1,7 @@
 # Review: 04-html
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-30 12:21
+**Review Date:** 2025-12-30 15:29
 
 ---
 
@@ -14,23 +14,23 @@
 - ✅ Found: `portfolio-v1.html`
 - ✅ Found: `portfolio-v2.html`
 - ✅ Found: `portfolio-v2.css`
-- ❌ Missing: `portfolio-v3.html`
+- ✅ Found: `portfolio-v3.html`
 
 ### Code Review
 
 📄 **portfolio-v1.html**
    Path: `04-html/challenge-01/portfolio-v1/portfolio-v1.html`
-   Lines: 209
+   Lines: 170
 
     - ✅ Has `<!DOCTYPE html>`
     - ✅ Uses semantic HTML5 tags
-    - ❌ Images missing `alt` attributes
+    - ✅ Images have `alt` attributes
     - ✅ Has viewport meta tag (mobile-friendly)
     - ✅ Has `lang` attribute
     - 📌 **Version 1 (Raw HTML)**
     - ✅ Pure semantic HTML (no styling)
 
-   **Score: 4/5**
+   **Score: 5/5**
 
 📄 **portfolio-v2.css**
    Path: `04-html/challenge-01/portfolio-v2/portfolio-v2.css`
@@ -52,8 +52,8 @@
 
    **Score: 5/5**
 
-📄 **portfolio.html**
-   Path: `04-html/challenge-01/portfolio-v3/portfolio.html`
+📄 **portfolio-v3.html**
+   Path: `04-html/challenge-01/portfolio-v3/portfolio-v3.html`
    Lines: 513
 
     - ✅ Has `<!DOCTYPE html>`
@@ -61,6 +61,9 @@
     - ❌ Images missing `alt` attributes
     - ✅ Has viewport meta tag (mobile-friendly)
     - ✅ Has `lang` attribute
+    - 📌 **Version 3 (Bootstrap)**
+    - ✅ Uses Bootstrap framework
+    - ✅ Uses Bootstrap classes
 
    **Score: 4/5**
 
@@ -78,7 +81,7 @@
 
 📄 **index.html**
    Path: `04-html/Media-gallery/index.html`
-   Lines: 126
+   Lines: 84
 
     - ✅ Has `<!DOCTYPE html>`
     - ✅ Uses semantic HTML5 tags
@@ -111,7 +114,7 @@
 
    **Score: 5/5**
 
-### Topic Score: 45 / 55 (81%)
+### Topic Score: 51 / 55 (92%)
 
 ---
 

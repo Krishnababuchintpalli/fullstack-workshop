@@ -1,7 +1,7 @@
 # Review: 01-linux
 
 **Exercise:**  Exercise: Log File Analyzer Script
-**Review Date:** 2025-12-30 12:21
+**Review Date:** 2025-12-30 15:29
 
 ---
 
@@ -17,53 +17,53 @@
 
 📄 **file-organizer.sh**
    Path: `01-linux/challenge-01/file-organizer.sh`
-   Lines: 37
-
-    - ✅ Has shebang (`#!/bin/bash`)
-    - ❌ Missing `set -e` for error handling
-    - ✅ Handles command-line arguments
-    - 💡 Consider adding more comments
-    - ✅ Variables are properly quoted
-
-   **Score: 3/5**
-
-📄 **process-monitor.sh**
-   Path: `01-linux/challenge-02/process-monitor.sh`
-   Lines: 30
-
-    - ❌ Missing shebang (`#!/bin/bash`)
-    - ❌ Missing `set -e` for error handling
-    - ✅ Handles command-line arguments
-    - 💡 Consider adding more comments
-    - ✅ Variables are properly quoted
-
-   **Score: 2/5**
-
-📄 **disk-alert.sh**
-   Path: `01-linux/challenge-03/disk-alert.sh`
-   Lines: 21
-
-    - ❌ Missing shebang (`#!/bin/bash`)
-    - ❌ Missing `set -e` for error handling
-    - ⚠️ No argument handling detected
-    - 💡 Consider adding more comments
-    - ✅ Variables are properly quoted
-
-   **Score: 1/5**
-
-📄 **log-analyzer.sh**
-   Path: `01-linux/log-analyzer.sh`
-   Lines: 40
+   Lines: 48
 
     - ✅ Has shebang (`#!/bin/bash`)
     - ✅ Has error handling (`set -e`)
-    - ✅ Handles command-line arguments
-    - 💡 Consider adding more comments
+    - ⚠️ No argument handling detected
+    - ✅ Has comments (8 lines)
     - ✅ Variables are properly quoted
 
    **Score: 4/5**
 
-### Topic Score: 15 / 25 (60%)
+📄 **process-monitor.sh**
+   Path: `01-linux/challenge-02/process-monitor.sh`
+   Lines: 38
+
+    - ✅ Has shebang (`#!/bin/bash`)
+    - ✅ Has error handling (`set -e`)
+    - ⚠️ No argument handling detected
+    - ✅ Has comments (6 lines)
+    - ✅ Variables are properly quoted
+
+   **Score: 4/5**
+
+📄 **disk-alert.sh**
+   Path: `01-linux/challenge-03/disk-alert.sh`
+   Lines: 35
+
+    - ✅ Has shebang (`#!/bin/bash`)
+    - ✅ Has error handling (`set -e`)
+    - ⚠️ No argument handling detected
+    - ✅ Has comments (6 lines)
+    - ✅ Variables are properly quoted
+
+   **Score: 4/5**
+
+📄 **log-analyzer.sh**
+   Path: `01-linux/log-analyzer.sh`
+   Lines: 49
+
+    - ✅ Has shebang (`#!/bin/bash`)
+    - ✅ Has error handling (`set -e`)
+    - ✅ Handles command-line arguments
+    - ✅ Has comments (5 lines)
+    - ✅ Variables are properly quoted
+
+   **Score: 5/5**
+
+### Topic Score: 22 / 25 (88%)
 
 ### Technical Checklist
 
