@@ -1,6 +1,11 @@
-select p.name as project_name,p.budget,count(p.id) as team_size,sum(a.hours_allocated) total_hours 
-from projects p join assignments a
-on p.id=a.project_id 
-where p.budget>50000
-group by a.project_id
-order by total_hours desc;
+SELECT
+    p.name AS project_name,
+    p.budget,
+    COUNT(DISTINCT a.employee_id) AS team_size,
+    SUM(a.hours_allocated) AS total_hours
+FROM projects p
+JOIN assignments a
+    ON p.id = a.project_id
+WHERE p.budget > 50000
+GROUP BY p.id, p.name, p.budget
+ORDER BY total_hours DESC;
