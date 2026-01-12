@@ -1,7 +1,7 @@
 # Review: 01-linux
 
 **Exercise:**  Exercise: Log File Analyzer Script
-**Review Date:** 2026-01-02 13:59
+**Review Date:** 2026-01-05 15:07
 
 ---
 
@@ -83,7 +83,7 @@ Relevance check not configured for this topic
 
 ## Challenge
 
-**Status:** ✅ Submitted (1 files)
+**Status:** ✅ Submitted (3 files)
 
 ### Challenge Relevance Check
 
@@ -102,7 +102,29 @@ Relevance check not configured for this topic
 
    **Score: 4/5**
 
-### Challenge Score: 4 / 5 (80%)
+📄 **process-monitor.sh**
+   Lines: 38
+
+    - ✅ Has shebang (`#!/bin/bash`)
+    - ✅ Has error handling (`set -e`)
+    - ⚠️ No argument handling detected
+    - ✅ Has comments (6 lines)
+    - ✅ Variables are properly quoted
+
+   **Score: 4/5**
+
+📄 **disk-alert.sh**
+   Lines: 35
+
+    - ✅ Has shebang (`#!/bin/bash`)
+    - ✅ Has error handling (`set -e`)
+    - ⚠️ No argument handling detected
+    - ✅ Has comments (6 lines)
+    - ✅ Variables are properly quoted
+
+   **Score: 4/5**
+
+### Challenge Score: 12 / 15 (80%)
 
 
 ---

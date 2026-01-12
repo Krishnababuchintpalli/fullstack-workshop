@@ -1,7 +1,7 @@
 # Review: 09-mysql
 
 **Exercise:**  Exercise: E-Commerce Database Design and Queries
-**Review Date:** 2026-01-02 13:59
+**Review Date:** 2026-01-05 15:07
 
 ---
 
@@ -110,18 +110,18 @@ Please complete the correct exercise and resubmit.
    **Score: 3/4**
 
 📄 **project-workload.sql**
-   Lines: 6
+   Lines: 11
 
     📋 **Challenge 3: Project Workload**
     Expected: project_name, budget, team_size, total_hours
 
     - ✅ Joins projects with assignments
-    - ❌ Missing team size count
+    - ✅ Counts team members
     - ✅ Sums allocated hours
     - ✅ Filters budget > 50000
     - ✅ Orders by total hours descending
 
-   **Score: 4/5**
+   **Score: 5/5**
 
 📄 **salary-adjustment.sql**
    Lines: 15
@@ -156,17 +156,17 @@ Please complete the correct exercise and resubmit.
    **Score: 2/3**
 
 📄 **top-earners.sql**
-   Lines: 1
+   Lines: 17
 
     📋 **Challenge 4: Top Earners**
     Expected: department, name, salary, rank_in_dept (window function)
 
     - ✅ Uses window ranking function
-    - ❌ Missing PARTITION BY department
+    - ✅ Partitions by department
     - ✅ Orders by salary descending
-    - ❌ Missing filter for top 3 (WHERE rank <= 3)
+    - ✅ Filters top 3 earners
 
-   **Score: 2/4**
+   **Score: 4/4**
 
 📄 **unassigned-resources.sql**
    Lines: 3
@@ -181,7 +181,7 @@ Please complete the correct exercise and resubmit.
 
    **Score: 4/4**
 
-### Challenge Score: 38 / 44 (86%)
+### Challenge Score: 41 / 44 (93%)
 
 
 ---
